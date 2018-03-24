@@ -114,6 +114,8 @@ RUN { \
 VOLUME /var/lib/mysql
 
 COPY TBrain_FLMD_0301.sql /
+RUN rm -rf /etc/mysql/my.cnf
+COPY my.cnf /etc/mysql
 
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod 777 /usr/local/bin/docker-entrypoint.sh \
