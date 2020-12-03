@@ -10,8 +10,8 @@
 #--------------------------------------------------
 MYSQL_CONTAINER_NAME="maridb"
 MYSQL_ROOT_PASSWORD="password"
-MYSQL_DOCKER_IMG="mariadb:10.2-2018-03-25"
-DATA_PATH="/Users/siangye/Documents/mariadb_data_folder/"
+MYSQL_DOCKER_IMG="mariadb:10.2"
+DATA_PATH="/Users/jiasiang.ye/SQL/docker-data"
 #--------------------------------------------------
 docker run -d \
   --restart="always" \
